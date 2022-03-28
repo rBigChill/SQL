@@ -1,3 +1,30 @@
+# Does not have to be capitalized
+
 SELECT:
     
+    # Example syntax
     SELECT column_name FROM table_name
+
+    # Grabs all colums
+    SELECT * FROM table_name
+
+DISTINCT:
+
+    # List unique/distinct values in a column
+    SELECT DISTINCT coumn FROM table
+    SELECT DISTINCT column FROM table
+
+    # For clarity
+    SELECT DISTINCT(column) FROM table
+
+COUNT:
+
+    # Returns number of input rows that match query
+    # Parenthasis are necessary
+    SELECT COUNTY(name) FROM table
+    SELECT COUNTY(choice) FROM table
+    SELECT COUNTY(*) FROM table
+
+WHERE:
+    
+
