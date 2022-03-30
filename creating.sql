@@ -1,3 +1,6 @@
+# Return
+RETURNING value
+
 # Data Types
     Boolean
     Character
@@ -42,7 +45,11 @@
     table_constraint table_constraint
     ) INHERITS existing_table_name
 
+<<<<<<< HEAD
     # example
+=======
+# example
+>>>>>>> 7460623c9831e941809c13061caa2ec65dd06bbb
     CREATE TABLE players(
     player_id SERIAL PRIMARY KEY,
     age SMALLINT NOT NULL,
@@ -61,7 +68,11 @@
         (value1, value2, ...)
         (value1, value2, ...)
 
+<<<<<<< HEAD
     # example
+=======
+# example
+>>>>>>> 7460623c9831e941809c13061caa2ec65dd06bbb
     INSERT INTO account(username, password, email, create_on)
     values
     ('Jose', 'password', 'jose@mail.com', CURRENT_TIMESTAMP)
@@ -71,8 +82,56 @@
     SET column1 = value1, column2 = value2, ...,
     WHERE
     condition
+<<<<<<< HEAD
 
     # example
     UPDATE account
     SET last_login = CURRENT_TIMESTAMP
     WHERE last_login IS NULL
+=======
+
+# example
+    UPDATE account
+    SET last_login = CURRENT_TIMESTAMP
+    WHERE last_login IS NULL
+
+# DELETE: remove rows
+    DELETE FROM table
+    WHERE row_id = 1
+
+# ALTER: changes to existing table structure
+    ALTER TABLE table_name
+    action
+
+# example
+    ALTER TABLE information
+    RENAME TO new_info
+
+    ALTER TABLE information
+    RENAME COLUMN person TO people
+
+    ALTER TABLE new_info
+    ALTER COLUMN people DROP NOT NULL
+
+# DROP: remove column from table
+    ALTER TABLE table_name
+    DROP COLUMN col_name
+
+    ALTER TABLE table_name
+    DROP COLUMN col_name CASCADE
+
+    ALTER TABLE table_name
+    DROP COLUMN IF EXISTS col_name
+
+    ALTER TABLE table_name
+    DROP COLUMN col_one,
+    DROP COLUMN col_two
+
+# CHECK: create customized constraints that adhere to certain condition
+    CREATE TABLE example(
+    ex_id SERIAL PRIMARY KEY,
+    age SMALLINT CHECK (age > 21),
+    parent_age SMALLINT CHECK(
+    parent_age > age)
+    )
+>>>>>>> 7460623c9831e941809c13061caa2ec65dd06bbb
