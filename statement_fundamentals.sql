@@ -1,7 +1,6 @@
 # Does not have to be capitalized
 
 SELECT:
-    
     # Example syntax
     SELECT column_name FROM table_name
 
@@ -9,7 +8,6 @@ SELECT:
     SELECT * FROM table_name
 
 DISTINCT:
-
     # List unique/distinct values in a column
     SELECT DISTINCT column FROM table
     SELECT DISTINCT column FROM table
@@ -18,7 +16,6 @@ DISTINCT:
     SELECT DISTINCT(column) FROM table
 
 COUNT:
-
     # Returns number of input rows that match query
     # Parenthasis are necessary
     SELECT COUNT(name) FROM table
@@ -26,7 +23,6 @@ COUNT:
     SELECT COUNT(*) FROM table
 
 WHERE:
-    
     # Specify conditions
     SELECT column1, column2
     FROM table
@@ -49,7 +45,6 @@ WHERE:
     WHERE name='David' AND choice='Red'
 
 ORDER BY:
-
     # Sort rows after filter statement
     SELECT column1, column2
     FROM table
@@ -61,7 +56,6 @@ ORDER BY:
     ORDER BY company, sales
 
 LIMIT:
-
     # limit the number of rows returned
     # goes at the end/bottom
     SELECT * FROM payment
@@ -70,7 +64,6 @@ LIMIT:
     LIMIT 10
 
 BETWEEN:
-
     # Match a value against a range of values
     # value BETWEEN low AND high
     # combine value NOT BETWEEN low AND high
@@ -81,7 +74,6 @@ BETWEEN:
     WHERE amount NOT BETWEEN 8 and 9
 
 IN:
-
     # Check for multiple possible value options
     SELECT color FROM table
     WHERE color IN('red','blue)
@@ -90,7 +82,6 @@ IN:
     WHERE color NOT IN('red','blue)
 
 LIKE and ILIKE:
-
     # Pattern matching against string data
     # ILIKE is case-insensitive
 
